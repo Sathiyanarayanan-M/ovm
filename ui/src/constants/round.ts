@@ -1,0 +1,4 @@
+const CHOOSING_WORD = "CHOOSING_WORD";
+const DRAWING = "DRAWING";
+
+export { CHOOSING_WORD, DRAWING };
