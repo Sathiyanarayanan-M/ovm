@@ -25,14 +25,8 @@ config.testDBCon()
 # API HANDLERS
 @app.route("/")
 def index():
-    # cur, closeConn = config.get_db_connection()
-    # cur.execute("SELECT * FROM player;")
-    # players = cur.fetchall()
-    # cur.execute("SELECT * FROM room;")
-    # allRooms = cur.fetchall()
-    # closeConn()
-    # return json.jsonify({"players": players, "rooms": allRooms})
-    return "HELLO WORLD"
+    return "Hello, World!"
+
 
 
 @app.route("/words")

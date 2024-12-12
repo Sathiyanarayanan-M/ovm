@@ -16,7 +16,7 @@ DB_DT = {
     "password": os.environ.get("DB_PASSWORD"),
 }
 
-DB_ST = "postgres://avnadmin:AVNS_SthqTRCLjFVBqb1STcq@ovm-ovm-1.i.aivencloud.com:10555/ovm?sslmode=require"
+DB_ST = os.environ.get("DB_ST") 
 
 def get_db_connection():
     conn = psycopg2.connect(DB_ST)
