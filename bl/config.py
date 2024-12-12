@@ -3,7 +3,9 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 import psycopg2.pool
 
-DEBUG = os.environ.get("ENVIRONMENT") == "development"
+ENVIRONMENT = os.environ.get("ENVIRONMENT") or "development"
+
+DEBUG = ENVIRONMENT == "development"
 CLIENT_URL = os.environ.get("CLIENT_URL")
 ACCEPTED_ORiGINS = "*" if DEBUG else [CLIENT_URL]
 
